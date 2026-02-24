@@ -76,7 +76,6 @@
         android:layout_height="53dp"
         android:background="@drawable/style_edit_text"
         android:ems="10"
-        android:hint="h"
         android:inputType="text"
         android:paddingLeft="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
