@@ -17,7 +17,7 @@ class PantallaDeAviso : AppCompatActivity() {
         setContentView(R.layout.activity_pantalla_de_aviso)
 
         val btn = findViewById<Button>(R.id.BotonPantallaAviso)
-
+// Comentario inecesario
         btn.setOnClickListener {
             val intent = Intent(this, PantallaLogin::class.java)
             startActivity(intent)
