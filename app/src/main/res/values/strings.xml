@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Taller2</string>
+    <string name="TituloBienbenida">Curipod</string>
+    <string name="NombreCreador">Miguel Angel Carvajal Jamiaca</string>
+    <string name="TextoAppInico">Inicia una nueva aventura con Curipod y descubre una nueva forma de ver el mundo</string>
+    <string name="bononComenzar">Comenzar</string>
+    <string name="Texto_login">La aventura está por iniciar, por favor inicia sesión</string>
+    <string name="TextIngresar">Ingresar</string>
+    <string name="GoogleText">Ingresa con Google</string>
+    <string name="reg_strate">Regístrate</string>
+    <string name="notienes_cuenta">Notienes Cuenta ?</string>
+</resources>

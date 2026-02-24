@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="TituloBienbenida">Nombre de la app</string>
+    <string name="TextoAppInico">Inicia una nueva aventura con Nombre de la app y descubre una nueva forma de ver el mundo</string>
+    <string name="TextIngresar">Ingresar</string>
+    <string name="reg_strate">Regístrate</string>
+</resources>
