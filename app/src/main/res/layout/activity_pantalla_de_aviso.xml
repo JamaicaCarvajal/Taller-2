@@ -9,7 +9,7 @@
     tools:context=".activities.PantallaDeAviso">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/LogoAbiso"
         android:layout_width="215dp"
         android:layout_height="215dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,7 +20,7 @@
         app:srcCompat="@mipmap/ic_logo_foreground" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/NombreEmpresaAviso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/archivo_black"
@@ -31,13 +31,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/LogoAbiso"
         app:layout_constraintVertical_bias="0.019" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/TextoAviso"
         android:layout_width="335dp"
         android:layout_height="85dp"
+        android:layout_marginBottom="296dp"
         android:fontFamily="@font/archivo_black"
         android:text="@string/TextoAppInico"
         android:textAlignment="center"
@@ -45,8 +46,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.204" />
+        app:layout_constraintTop_toTopOf="@+id/NombreEmpresaAviso"
+        app:layout_constraintVertical_bias="0.592" />
 
     <Button
         android:id="@+id/BotonPantallaAviso"
@@ -59,9 +60,10 @@
         app:cornerRadius="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.272"
+        app:layout_constraintTop_toBottomOf="@+id/TextoAviso"
+        app:layout_constraintVertical_bias="0.264"
         app:strokeColor="@color/whithe"
         app:strokeWidth="3dp" />
 
@@ -77,7 +79,7 @@
         app:layout_constraintVertical_bias="0.414" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/TextoRegistroAviso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/archivo_black"
@@ -88,5 +90,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/BotonPantallaAviso"
-        app:layout_constraintVertical_bias="0.396" />
+        app:layout_constraintVertical_bias="0.394" />
 </androidx.constraintlayout.widget.ConstraintLayout>

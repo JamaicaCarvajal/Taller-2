@@ -9,7 +9,7 @@
     tools:context=".activities.PantallaLogin">
 
     <Button
-        android:id="@+id/botonPantallaAviso"
+        android:id="@+id/botonPantallaLogIn"
         android:layout_width="262dp"
         android:layout_height="75dp"
         android:backgroundTint="@color/TextColo1"
@@ -28,7 +28,7 @@
         app:strokeWidth="3dp" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/LogoLogIn"
         android:layout_width="128dp"
         android:layout_height="134dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -40,7 +40,7 @@
         app:srcCompat="@mipmap/ic_logo_foreground" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/NombreEmpresaLogIn"
         android:layout_width="144dp"
         android:layout_height="35dp"
         android:fontFamily="@font/archivo_black"
@@ -56,7 +56,7 @@
         app:layout_constraintVertical_bias="0.11" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/TextoPrincipalLogIn"
         android:layout_width="367dp"
         android:layout_height="44dp"
         android:fontFamily="@font/archivo_black"
@@ -71,12 +71,12 @@
         app:layout_constraintVertical_bias="0.229" />
 
     <EditText
-        android:id="@+id/editTextText5"
+        android:id="@+id/InputPasword"
         android:layout_width="260dp"
         android:layout_height="53dp"
         android:background="@drawable/style_edit_text"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:paddingLeft="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,7 +86,7 @@
         app:layout_constraintVertical_bias="0.449" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/KeyAndPePol"
         android:layout_width="100dp"
         android:layout_height="158dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -98,7 +98,7 @@
         app:srcCompat="@drawable/keypeole" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/InputUsuario"
         android:layout_width="260dp"
         android:layout_height="53dp"
         android:background="@drawable/style_edit_text"
@@ -114,11 +114,11 @@
         app:layout_constraintVertical_bias="0.349" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/TextoCrearLogIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/archivo_black"
-        android:text="Recuerar Tu Contraseña"
+        android:text="@string/recuerar_tu_contrase_a"
         android:textSize="21dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -128,7 +128,7 @@
         app:layout_constraintVertical_bias="0.703" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/BotonGoogle"
         android:layout_width="356dp"
         android:layout_height="75dp"
         android:backgroundTint="@color/whithe"
@@ -147,20 +147,21 @@
         app:strokeWidth="3dp" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/GoogleLogo"
         android:layout_width="48dp"
         android:layout_height="48dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        app:layout_constraintBottom_toBottomOf="@+id/BotonGoogle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.201"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="@+id/BotonGoogle"
         app:layout_constraintVertical_bias="0.629"
         app:srcCompat="@drawable/googlelogo" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/TextoTienesCuenlLogIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
@@ -171,11 +172,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.133"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/BotonGoogle"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/TextoRegistroLogIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/archivo_black"
@@ -186,7 +187,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.854"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/BotonGoogle"
         app:layout_constraintVertical_bias="0.215" />
 
 

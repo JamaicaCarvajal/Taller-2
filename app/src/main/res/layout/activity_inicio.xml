@@ -9,7 +9,7 @@
     tools:context=".activities.inicio">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/LogoInicio"
         android:layout_width="389dp"
         android:layout_height="373dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,9 +20,10 @@
         app:srcCompat="@mipmap/ic_logo_foreground" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/NombreEmpresaInicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="196dp"
         android:fontFamily="@font/archivo_black"
         android:text="@string/TituloBienbenida"
         android:textColor="@color/TextColo1"
@@ -30,11 +31,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/LogoInicio"
         app:layout_constraintVertical_bias="0.146" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/Minombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
