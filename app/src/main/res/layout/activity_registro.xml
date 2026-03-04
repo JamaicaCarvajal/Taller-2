@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activities.registro"
+    android:background="@color/BackGroundG">
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutEmpresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+
+        >
+        <ImageView
+            android:contentDescription="@string/TituloBienbenida"
+            android:id="@+id/LogoLogIn"
+            android:layout_width="128dp"
+            android:layout_height="134dp"
+            app:layout_constraintHorizontal_bias="0.056"
+
+            app:layout_constraintVertical_bias="0.041"
+            app:srcCompat="@mipmap/ic_logo_foreground" />
+
+        <TextView
+            android:id="@+id/NombreEmpresaLogIn"
+            android:layout_width="144dp"
+            android:layout_height="35dp"
+            android:fontFamily="@font/archivo_black"
+            android:text="@string/TituloBienbenida"
+            android:textAlignment="center"
+            android:textColor="@color/TextColo1"
+            android:textSize="25sp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintHorizontal_bias="0.534"
+            app:layout_constraintVertical_bias="0.11" />
+
+        <TextView
+            android:id="@+id/VolverLogIn"
+            android:layout_width="144dp"
+            android:layout_height="35dp"
+
+            android:fontFamily="@font/archivo_black"
+            android:text="@string/volverText"
+            android:textAlignment="center"
+            android:textColor="@color/TextColo1"
+            android:textSize="25sp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintHorizontal_bias="0.534"
+            app:layout_constraintVertical_bias="0.11" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/RegistroTitulo"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="@string/reg_strate"
+        android:textAlignment="center"
+        android:textColor="@color/TextColo1"
+        android:textSize="30sp"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <TextView
+        android:id="@+id/NombreRegis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_black"
+        android:text="@string/nombre"
+        android:textColor="@color/black"
+        android:layout_marginEnd="121dp"
+        android:layout_marginTop="40dp"
+        android:textSize="27sp" />
+
+    <EditText
+        android:id="@+id/InputNomrbe"
+        android:layout_width="360dp"
+        android:layout_height="53dp"
+        android:background="@drawable/style_edit_text"
+        android:inputType="text"
+        android:autofillHints="username"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"/>
+
+    <TextView
+        android:id="@+id/ApellidoRegis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_black"
+        android:text="@string/apellidoTitel"
+        android:textColor="@color/black"
+        android:layout_marginEnd="118dp"
+        android:layout_marginTop="30dp"
+        android:textSize="27sp" />
+
+    <EditText
+        android:id="@+id/InputApellido"
+        android:layout_width="360dp"
+        android:layout_height="53dp"
+        android:background="@drawable/style_edit_text"
+        android:inputType="text"
+        android:autofillHints="username"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"/>
+
+
+    <TextView
+        android:id="@+id/CorreoRegis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_black"
+        android:text="@string/correoTitle"
+        android:textColor="@color/black"
+        android:layout_marginEnd="128dp"
+        android:layout_marginTop="30dp"
+        android:textSize="27sp" />
+
+    <EditText
+        android:id="@+id/InputCorreo"
+        android:layout_width="360dp"
+        android:layout_height="53dp"
+        android:background="@drawable/style_edit_text"
+        android:inputType="text"
+        android:autofillHints="username"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"/>
+
+    <TextView
+        android:id="@+id/ContrasenaRegis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_black"
+        android:text="@string/contrase_aTitle"
+        android:textColor="@color/black"
+        android:layout_marginEnd="94dp"
+        android:layout_marginTop="30dp"
+        android:textSize="27sp" />
+
+    <EditText
+        android:id="@+id/InputContrasena"
+        android:layout_width="360dp"
+        android:layout_height="53dp"
+        android:background="@drawable/style_edit_text"
+        android:inputType="textPassword"
+        android:autofillHints="Password"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"/>
+    <TextView
+        android:id="@+id/RepetirontrasenaRegis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_black"
+        android:text="@string/repetir_contrase_aTitle"
+        android:textColor="@color/black"
+        android:layout_marginEnd="37dp"
+        android:layout_marginTop="30dp"
+        android:textSize="27sp" />
+
+    <EditText
+        android:id="@+id/InputContrasenaRepetir"
+        android:layout_width="360dp"
+        android:layout_height="53dp"
+        android:background="@drawable/style_edit_text"
+        android:inputType="textPassword"
+        android:autofillHints="Password"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"/>
+
+
+    <Button
+        android:id="@+id/botonRegistrar"
+        android:layout_width="262dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/TextColo1"
+        android:fontFamily="@font/archivo_black"
+        android:text="@string/reistrarTextButton"
+
+        android:textSize="24sp"
+        app:cornerRadius="60dp"
+        app:strokeColor="@color/whithe"
+        app:strokeWidth="3dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aceptar_terminos_y_condiciones"
+        android:textSize="20sp"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+</LinearLayout>
+
+</ScrollView>

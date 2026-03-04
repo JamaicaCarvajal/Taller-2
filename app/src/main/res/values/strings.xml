@@ -12,4 +12,12 @@
     <string name="recuerar_tu_contrase_a">Recuerar Tu Contraseña</string>
     <string name="peopleImgDescription">People</string>
     <string name="KeyImgDescription">key</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidoTitel">Apellido</string>
+    <string name="correoTitle">Correo</string>
+    <string name="contrase_aTitle">Contraseña</string>
+    <string name="repetir_contrase_aTitle">Repetir Contraseña</string>
+    <string name="reistrarTextButton">Reistrar</string>
+    <string name="aceptar_terminos_y_condiciones">Aceptar terminos y condiciones</string>
+    <string name="volverText">Volver</string>
 </resources>
