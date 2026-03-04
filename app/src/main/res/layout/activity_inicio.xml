@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:gravity="center"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/BackGroundG"
@@ -12,25 +14,21 @@
         android:id="@+id/LogoInicio"
         android:layout_width="389dp"
         android:layout_height="373dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
         app:layout_constraintVertical_bias="0.181"
-        app:srcCompat="@mipmap/ic_logo_foreground" />
+        app:srcCompat="@mipmap/ic_logo_foreground"
+        android:contentDescription="@string/Texto_login"
+        />
 
     <TextView
         android:id="@+id/NombreEmpresaInicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="196dp"
+
         android:fontFamily="@font/archivo_black"
         android:text="@string/TituloBienbenida"
         android:textColor="@color/TextColo1"
         android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LogoInicio"
         app:layout_constraintVertical_bias="0.146" />
 
@@ -38,13 +36,13 @@
         android:id="@+id/Minombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
         android:fontFamily="@font/archivo_black"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="63dp"
+        android:gravity="end"
         android:text="@string/NombreCreador"
         android:textColor="@color/TextColo1"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.748"
-        app:layout_constraintStart_toStartOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+         />
+</LinearLayout>

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/BackGroundG"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".activities.PantallaDeAviso">
 
     <ImageView
         android:id="@+id/LogoAbiso"
-        android:layout_width="215dp"
-        android:layout_height="215dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_width="250dp"
+        android:layout_height="254dp"
+        android:contentDescription="@string/Texto_login"
         app:layout_constraintVertical_bias="0.003"
         app:srcCompat="@mipmap/ic_logo_foreground" />
 
@@ -23,14 +23,11 @@
         android:id="@+id/NombreEmpresaAviso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
         android:fontFamily="@font/archivo_black"
         android:text="@string/TituloBienbenida"
         android:textColor="@color/TextColo1"
         android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LogoAbiso"
         app:layout_constraintVertical_bias="0.019" />
 
@@ -38,15 +35,13 @@
         android:id="@+id/TextoAviso"
         android:layout_width="335dp"
         android:layout_height="85dp"
-        android:layout_marginBottom="296dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
         android:fontFamily="@font/archivo_black"
         android:text="@string/TextoAppInico"
         android:textAlignment="center"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/NombreEmpresaAviso"
+        android:textColor="@color/black"
         app:layout_constraintVertical_bias="0.592" />
 
     <Button
@@ -58,11 +53,7 @@
         android:text="@string/bononComenzar"
         android:textSize="24sp"
         app:cornerRadius="60dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextoAviso"
         app:layout_constraintVertical_bias="0.264"
         app:strokeColor="@color/whithe"
         app:strokeWidth="3dp" />
@@ -71,11 +62,7 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BotonPantallaAviso"
         app:layout_constraintVertical_bias="0.414" />
 
     <TextView
@@ -86,9 +73,5 @@
         android:text="@string/reg_strate"
         android:textColor="@color/TextColo1"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BotonPantallaAviso"
         app:layout_constraintVertical_bias="0.394" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

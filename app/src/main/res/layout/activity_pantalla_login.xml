@@ -1,41 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     android:background="@color/BackGroundG"
     tools:context=".activities.PantallaLogin">
 
-    <Button
-        android:id="@+id/botonPantallaLogIn"
-        android:layout_width="262dp"
-        android:layout_height="75dp"
-        android:backgroundTint="@color/TextColo1"
-        android:fontFamily="@font/archivo_black"
-        android:text="@string/TextIngresar"
-        android:textSize="24sp"
-        app:cornerRadius="60dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
 
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.62"
-        app:strokeColor="@color/whithe"
-        app:strokeWidth="3dp" />
+<LinearLayout
+    android:id="@+id/layoutEmpresa"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="10dp"
 
+    >
     <ImageView
+        android:contentDescription="@string/TituloBienbenida"
         android:id="@+id/LogoLogIn"
         android:layout_width="128dp"
         android:layout_height="134dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.056"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="25dp"
         app:layout_constraintVertical_bias="0.041"
         app:srcCompat="@mipmap/ic_logo_foreground" />
 
@@ -48,70 +38,92 @@
         android:textAlignment="center"
         android:textColor="@color/TextColo1"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
         app:layout_constraintHorizontal_bias="0.534"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.11" />
+
+</LinearLayout>
+
 
     <TextView
         android:id="@+id/TextoPrincipalLogIn"
         android:layout_width="367dp"
-        android:layout_height="44dp"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/archivo_black"
         android:text="@string/Texto_login"
         android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.636"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.229" />
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="50dp"
 
-    <EditText
-        android:id="@+id/InputPasword"
-        android:layout_width="260dp"
-        android:layout_height="53dp"
-        android:background="@drawable/style_edit_text"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:paddingLeft="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.801"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.449" />
+     />
+
+
+    <LinearLayout
+    android:id="@+id/layoutUsuario"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="20dp">
 
     <ImageView
-        android:id="@+id/KeyAndPePol"
-        android:layout_width="100dp"
-        android:layout_height="158dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.38"
-        app:srcCompat="@drawable/keypeole" />
+        android:contentDescription="@string/peopleImgDescription"
+        android:id="@+id/peopleImg"
+        android:layout_width="52dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="20dp"
+        app:srcCompat="@drawable/people" />
 
     <EditText
         android:id="@+id/InputUsuario"
         android:layout_width="260dp"
         android:layout_height="53dp"
         android:background="@drawable/style_edit_text"
-        android:ems="10"
         android:inputType="text"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.801"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.349" />
+        android:autofillHints="username"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:contentDescription="@string/KeyImgDescription"
+            android:id="@+id/keyImg"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            app:srcCompat="@drawable/key" />
+
+        <EditText
+            android:id="@+id/InputPasword"
+            android:layout_width="260dp"
+            android:layout_height="53dp"
+            android:background="@drawable/style_edit_text"
+            android:inputType="textPassword"
+            android:autofillHints="Passord"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/botonPantallaLogIn"
+        android:layout_width="262dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/TextColo1"
+        android:fontFamily="@font/archivo_black"
+        android:text="@string/TextIngresar"
+        android:textSize="24sp"
+        app:cornerRadius="60dp"
+        app:strokeColor="@color/whithe"
+        app:strokeWidth="3dp" />
 
     <TextView
         android:id="@+id/TextoCrearLogIn"
@@ -119,61 +131,50 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/archivo_black"
         android:text="@string/recuerar_tu_contrase_a"
-        android:textSize="21dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.564"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.703" />
+        android:textSize="21sp"
+        android:textColor="@color/black"
+        />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/BotonGoogle"
         android:layout_width="356dp"
         android:layout_height="75dp"
-        android:backgroundTint="@color/whithe"
-        android:fontFamily="@font/archivo_black"
+        android:layout_marginTop="20dp"
         android:text="@string/GoogleText"
-        android:textAlignment="viewEnd"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.853"
-        app:strokeColor="@color/TextColo1"
-        app:strokeWidth="3dp" />
+        android:fontFamily="@font/archivo_black"
+        android:backgroundTint="@color/whithe"
 
-    <ImageView
-        android:id="@+id/GoogleLogo"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/BotonGoogle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.201"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/BotonGoogle"
-        app:layout_constraintVertical_bias="0.629"
-        app:srcCompat="@drawable/googlelogo" />
+        app:icon="@drawable/googlelogo"
+        app:iconGravity="textStart"
+        app:iconPadding="20dp"
+        app:iconSize="32dp"
+
+        app:strokeColor="@color/TextColo1"
+        app:strokeWidth="3dp"
+        app:cornerRadius="60dp"/>
+
+    <LinearLayout
+        android:id="@+id/RegistrotextEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        >
+
 
     <TextView
         android:id="@+id/TextoTienesCuenlLogIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
+
         android:fontFamily="@font/archivo_black"
         android:text="@string/notienes_cuenta"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.133"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BotonGoogle"
-        app:layout_constraintVertical_bias="0.0" />
+        android:textColor="@color/black"
+         />
 
     <TextView
         android:id="@+id/TextoRegistroLogIn"
@@ -183,12 +184,12 @@
         android:text="@string/reg_strate"
         android:textColor="@color/TextColo1"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.854"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BotonGoogle"
-        app:layout_constraintVertical_bias="0.215" />
+        />
+
+    </LinearLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>

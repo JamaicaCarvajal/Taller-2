@@ -10,4 +10,6 @@
     <string name="reg_strate">Regístrate</string>
     <string name="notienes_cuenta">Notienes Cuenta ?</string>
     <string name="recuerar_tu_contrase_a">Recuerar Tu Contraseña</string>
+    <string name="peopleImgDescription">People</string>
+    <string name="KeyImgDescription">key</string>
 </resources>

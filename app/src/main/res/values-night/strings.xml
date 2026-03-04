@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="TituloBienbenida">Nombre de la app</string>
+    <string name="TituloBienbenida">Curipod</string>
     <string name="TextoAppInico">Inicia una nueva aventura con Nombre de la app y descubre una nueva forma de ver el mundo</string>
     <string name="TextIngresar">Ingresar</string>
     <string name="reg_strate">Regístrate</string>
     <string name="recuerar_tu_contrase_a">Recuerar Tu Contraseña</string>
+    <string name="peopleImgDescription">People</string>
+    <string name="KeyImgDescription">key</string>
 </resources>
