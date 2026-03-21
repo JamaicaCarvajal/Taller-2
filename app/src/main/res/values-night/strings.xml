@@ -14,4 +14,13 @@
     <string name="reistrarTextButton">Reistrar</string>
     <string name="aceptar_terminos_y_condiciones">Aceptar terminos y condiciones</string>
     <string name="volverText">Volver</string>
+    <string name="mi_tientda">Mi tientda</string>
+    <string name="inicioNav">Inicio</string>
+    <string name="AyudaNav">Ayuda</string>
+    <string name="llamarNav">llamar</string>
+    <string name="favoritos">favoritos</string>
+    <string name="borrarNav">Borrar</string>
+    <string name="navigation_drawer_open">Menu Abierto</string>
+    <string name="navigation_drawer_close">Menu cerrado</string>
+    <string name="masMenu">mas</string>
 </resources>

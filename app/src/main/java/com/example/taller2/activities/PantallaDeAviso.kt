@@ -25,11 +25,12 @@ class PantallaDeAviso : AppCompatActivity() {
         }
 
         val textoRegistro = findViewById<TextView>(R.id.TextoRegistroAviso)
-
         textoRegistro.setOnClickListener {
             val intent = Intent(this, registro::class.java)
             startActivity(intent)
         }
+
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

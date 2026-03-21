@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/StarNav"
+            android:title="@string/favoritos"
+            android:icon="@android:drawable/star_big_off"
+
+            />
+
+        <item
+            android:id="@+id/navCatalogo"
+            android:title="@string/masMenu"
+            android:icon="@android:drawable/btn_plus"
+
+            />
+        <item
+            android:id="@+id/NavBorrar"
+            android:title="@string/borrarNav"
+            android:icon="@android:drawable/ic_delete"
+            />
+
+        <item
+            android:id="@+id/navAyuda"
+            android:title="@string/AyudaNav"
+            android:icon="@android:drawable/ic_menu_help"
+            />
+
+
+
+    </group>
+
+</menu>
