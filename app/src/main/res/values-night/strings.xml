@@ -24,4 +24,14 @@
     <string name="navigation_drawer_close">Menu cerrado</string>
     <string name="masMenu">mas</string>
     <string name="logoTITle">Logo</string>
+    <string name="adminnav">adminnav</string>
+    <string name="usuario">usuario</string>
+    <string name="productos_destadacos">Productos Destadacos</string>
+    <string name="imagen_del_producto">Imagen del producto</string>
+    <string name="agregar_al_carrito">Agregar al carrito</string>
+    <string name="TextoEjemplo1">Carrito</string>
+    <string name="TextoEjeplo2">Catalogo</string>
+    <string name="textoEjemplo3">favoritos</string>
+    <string name="TextoEjemplo4">Admin</string>
+    <string name="TextoEjeplo5">Perfil</string>
 </resources>

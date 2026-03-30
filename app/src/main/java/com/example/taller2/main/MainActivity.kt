@@ -11,7 +11,15 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.Fragment
 import com.example.taller2.R
+import com.example.taller2.main.admin.AdminFragment
+import com.example.taller2.main.admin.usuariosFragment
+import com.example.taller2.main.perfil.perfilFragment
+import com.example.taller2.main.productos.CarritoFragment
+import com.example.taller2.main.productos.CatalogoFragment
+import com.example.taller2.main.productos.HomeFragment
+import com.example.taller2.main.productos.facoritosFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.tabs.TabLayout
@@ -43,12 +51,47 @@ class MainActivity : AppCompatActivity() {
 
             drawerLayout.addDrawerListener(toggle)
             toggle.syncState()
+            toggle.drawerArrowDrawable.color = ContextCompat.getColor(this, R.color.TextColo1)
+
+            CargarFragment(HomeFragment())
+
+            bottomNav.selectedItemId = R.id.navHome
+
+            bottomNav.setOnItemSelectedListener { item ->
+                when (item.itemId) {
+                    R.id.navHome -> CargarFragment(HomeFragment())
+                    R.id.navCatalogo -> CargarFragment(CatalogoFragment())
+                    R.id.navCall -> CargarFragment(CarritoFragment())
+                    R.id.navAyuda -> CargarFragment(facoritosFragment())
+                }
+                true
+            }
+
+            navView.setNavigationItemSelectedListener { item ->
+                when (item.itemId) {
+                    R.id.navHome -> CargarFragment(HomeFragment())
+                    R.id.Admin -> CargarFragment(AdminFragment())
+                    R.id.UsuarioNav -> CargarFragment(usuariosFragment())
+                    R.id.PerfilNav -> CargarFragment(perfilFragment())
+                }
+                drawerLayout.closeDrawers()
+                true
+            }
 
 
-            toggle.drawerArrowDrawable.color = ContextCompat.getColor(this,R.color.TextColo1)
+
+
+
+
+
         }
 
 
+        private fun CargarFragment(fragment: Fragment) {
+         supportFragmentManager.beginTransaction()
+                .replace( R.id.fragmentContenedor, fragment)
+                .commit()
+    }
 
 
 }
