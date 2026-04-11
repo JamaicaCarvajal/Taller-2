@@ -35,7 +35,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@mipmap/ic_logo"
-                    android:contentDescription="@string/logoTITle" />
+                    android:contentDescription="@string/logo" />
 
                 <TextView
                     android:layout_width="wrap_content"

@@ -23,7 +23,7 @@
 
         <item
             android:id="@+id/PerfilNav"
-            android:title="@string/perfil"
+            android:title="@string/navperfil"
             android:icon="@android:drawable/ic_dialog_info"
             />
 
