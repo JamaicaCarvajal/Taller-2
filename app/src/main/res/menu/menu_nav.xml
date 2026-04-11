@@ -27,6 +27,12 @@
             android:icon="@android:drawable/ic_dialog_info"
             />
 
+        <item
+            android:id="@+id/EditPerfilNav"
+            android:title="@string/editar_perfil"
+            android:icon="@android:drawable/ic_dialog_info"
+            />
+
 
     </group>
 

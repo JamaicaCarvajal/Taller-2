@@ -210,7 +210,7 @@
         app:strokeWidth="3dp" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkBoxRegistro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/aceptar_terminos_y_condiciones"
@@ -221,6 +221,19 @@
         android:layout_marginTop="20dp"
         />
 
+    <TextView
+        android:id="@+id/Re_cuenta"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="@string/ya_tienes_cuenta"
+        android:textAlignment="center"
+        android:textColor="@color/TextColo1"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintVertical_bias="0.11" />
 
 
 </LinearLayout>

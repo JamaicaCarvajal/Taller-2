@@ -34,4 +34,7 @@
     <string name="logo">logo</string>
     <string name="adminnav">admin</string>
     <string name="navperfil">perfil</string>
+    <string name="ya_tienes_cuenta">Ya tienes Cuenta ?</string>
+    <string name="editar_perfil">Editar Perfil</string>
+    <string name="actualizar">Actualizar</string>
 </resources>

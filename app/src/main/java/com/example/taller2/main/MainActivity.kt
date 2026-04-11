@@ -15,6 +15,7 @@ import androidx.fragment.app.Fragment
 import com.example.taller2.R
 import com.example.taller2.main.admin.AdminFragment
 import com.example.taller2.main.admin.usuariosFragment
+import com.example.taller2.main.perfil.EditPerilFragment
 import com.example.taller2.main.perfil.perfilFragment
 import com.example.taller2.main.productos.CarritoFragment
 import com.example.taller2.main.productos.CatalogoFragment
@@ -73,6 +74,8 @@ class MainActivity : AppCompatActivity() {
                     R.id.Admin -> CargarFragment(AdminFragment())
                     R.id.UsuarioNav -> CargarFragment(usuariosFragment())
                     R.id.PerfilNav -> CargarFragment(perfilFragment())
+                    R.id.EditPerfilNav -> CargarFragment(EditPerilFragment())
+
                 }
                 drawerLayout.closeDrawers()
                 true

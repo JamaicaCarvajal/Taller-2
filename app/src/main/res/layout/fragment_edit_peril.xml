@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainEditarPerfil"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackGroundG"
+    tools:context=".activities.inicio">
+    <ScrollView
+        android:id="@+id/ScrollEditarPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/ContenedorSecundario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            tools:context=".activities.registro"
+            android:background="@color/BackGroundG">
+
+
+
+            <LinearLayout
+                android:id="@+id/layoutEmpresa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+
+                >
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TituloEditarPerfilFrag"
+                android:layout_width="209dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/editar_perfil"
+                android:textAlignment="center"
+                android:textColor="@color/TextColo1"
+                android:textSize="30sp"
+                app:layout_constraintHorizontal_bias="0.534"
+                app:layout_constraintVertical_bias="0.11" />
+
+            <TextView
+                android:id="@+id/NombreEditarPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/nombre"
+                android:textColor="@color/black"
+                android:layout_marginEnd="121dp"
+                android:layout_marginTop="40dp"
+                android:textSize="27sp" />
+
+            <EditText
+                android:id="@+id/InputNomrbeEditPerfl"
+                android:layout_width="360dp"
+                android:layout_height="53dp"
+                android:background="@drawable/style_edit_text"
+                android:inputType="text"
+                android:autofillHints="username"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"/>
+
+            <TextView
+                android:id="@+id/ApellidoEditPerfl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/apellidoTitel"
+                android:textColor="@color/black"
+                android:layout_marginEnd="118dp"
+                android:layout_marginTop="30dp"
+                android:textSize="27sp" />
+
+            <EditText
+                android:id="@+id/InputApellidoEditPerfl"
+                android:layout_width="360dp"
+                android:layout_height="53dp"
+                android:background="@drawable/style_edit_text"
+                android:inputType="text"
+                android:autofillHints="username"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"/>
+
+
+            <TextView
+                android:id="@+id/CorreoEditPerfl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/correoTitle"
+                android:textColor="@color/black"
+                android:layout_marginEnd="128dp"
+                android:layout_marginTop="30dp"
+                android:textSize="27sp" />
+
+            <EditText
+                android:id="@+id/InputCorreoEditPerfl"
+                android:layout_width="360dp"
+                android:layout_height="53dp"
+                android:background="@drawable/style_edit_text"
+                android:inputType="text"
+                android:autofillHints="username"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"/>
+
+            <TextView
+                android:id="@+id/ContrasenaEditPerfl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/contrase_aTitle"
+                android:textColor="@color/black"
+                android:layout_marginEnd="94dp"
+                android:layout_marginTop="30dp"
+                android:textSize="27sp" />
+
+            <EditText
+                android:id="@+id/InputContrasenaEditPerfl"
+                android:layout_width="360dp"
+                android:layout_height="53dp"
+                android:background="@drawable/style_edit_text"
+                android:inputType="textPassword"
+                android:autofillHints="Password"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"/>
+            <TextView
+                android:id="@+id/RepetirontrasenaEditPerfl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/repetir_contrase_aTitle"
+                android:textColor="@color/black"
+                android:layout_marginEnd="37dp"
+                android:layout_marginTop="30dp"
+                android:textSize="27sp" />
+
+            <EditText
+                android:id="@+id/InputContrasenaRepetirEditPerfl"
+                android:layout_width="360dp"
+                android:layout_height="53dp"
+                android:background="@drawable/style_edit_text"
+                android:inputType="textPassword"
+                android:autofillHints="Password"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"/>
+
+
+            <Button
+                android:id="@+id/botonEditPerfl"
+                android:layout_width="262dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/TextColo1"
+                android:fontFamily="@font/archivo_black"
+                android:text="@string/actualizar"
+
+                android:textSize="24sp"
+                app:cornerRadius="60dp"
+                app:strokeColor="@color/whithe"
+                app:strokeWidth="3dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
