@@ -4,9 +4,9 @@
         <item name="colorOutline">@color/TextColo1</item>
     </style>
 
-    <style name="Theme.Taller2" parent="Base.Theme.Taller2" >
+    <style name="Theme.Taller2" parent="Base.Theme.Taller2">
 
-        <item name="colorPrimary" >@color/BackGroundG </item>
+        <item name="colorPrimary">@color/BackGroundG</item>
 
 
     </style>

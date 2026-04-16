@@ -126,7 +126,20 @@
         app:strokeWidth="3dp" />
 
     <TextView
-        android:id="@+id/TextoCrearLogIn"
+        android:id="@+id/in_huella"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iniciar_con_huella"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/archivo_black"
+        android:textSize="21sp"
+        android:textColor="@color/black"
+        />
+
+
+    <TextView
+        android:id="@+id/RecuperarLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/archivo_black"
@@ -134,6 +147,7 @@
         android:textSize="21sp"
         android:textColor="@color/black"
         />
+
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/BotonGoogle"

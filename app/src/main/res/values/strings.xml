@@ -46,4 +46,7 @@
     <string name="ya_tienes_cuenta">Ya tienes Cuenta ?</string>
     <string name="editar_perfil">Editar Perfil</string>
     <string name="actualizar">Actualizar</string>
+    <string name="title_activity_hola">hola</string>
+    <string name="cerra_secion">Cerra Secion</string>
+    <string name="iniciar_con_huella">iniciar Con huella</string>
 </resources>

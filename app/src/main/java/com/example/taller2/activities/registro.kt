@@ -24,7 +24,7 @@ import kotlinx.coroutines.launch
 import kotlinx.serialization.Serializable
 import kotlin.jvm.java
 
-class registro : AppCompatActivity() {
+class  registro : AppCompatActivity() {
 
     private lateinit var etNombres: EditText
     private lateinit var etApellidos: EditText
