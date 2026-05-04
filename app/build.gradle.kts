@@ -76,6 +76,9 @@ dependencies {
 
     implementation(libs.biometric)
 
+    implementation(libs.coil)
+    implementation(libs.supabase.storage)
+
 
 
 }

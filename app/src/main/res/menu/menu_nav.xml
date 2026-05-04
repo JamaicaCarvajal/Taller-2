@@ -13,12 +13,14 @@
             android:id="@+id/Admin"
             android:title="@string/adminnav"
             android:icon="@android:drawable/ic_menu_report_image"
+            android:visible="false"
 
             />
         <item
             android:id="@+id/UsuarioNav"
             android:title="@string/usuario"
             android:icon="@android:drawable/ic_secure"
+            android:visible="false"
             />
 
         <item

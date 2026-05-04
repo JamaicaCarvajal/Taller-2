@@ -3,6 +3,7 @@ package com.example.taller2.main
 import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.os.Bundle
+import android.view.Menu
 import android.widget.Toast
 
 import androidx.activity.enableEdgeToEdge
@@ -10,25 +11,22 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import com.example.taller2.R
 import com.example.taller2.SupabaseClient
 import com.example.taller2.activities.PantallaLogin
+import com.example.taller2.data.UsuarioRepository
 import com.example.taller2.main.admin.AdminFragment
 import com.example.taller2.main.admin.usuariosFragment
 import com.example.taller2.main.perfil.EditPerilFragment
-import com.example.taller2.main.perfil.perfilFragment
 import com.example.taller2.main.productos.CarritoFragment
 import com.example.taller2.main.productos.CatalogoFragment
 import com.example.taller2.main.productos.HomeFragment
 import com.example.taller2.main.productos.facoritosFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
-import com.google.android.material.tabs.TabLayout
 import io.github.jan.supabase.auth.auth
 import kotlinx.coroutines.launch
 
@@ -65,6 +63,8 @@ class MainActivity : AppCompatActivity() {
 
         bottomNav.selectedItemId = R.id.navHome
 
+        configurarMenuPorRol(navView.menu)
+
         bottomNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.navHome -> CargarFragment(HomeFragment())
@@ -91,6 +91,31 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+
+
+
+    private fun configurarMenuPorRol(menu: Menu){
+        lifecycleScope.launch {
+            val rol = UsuarioRepository.obtenerRolActual()
+            runOnUiThread {
+                when (rol) {
+                    "admin" -> {
+                        menu.findItem( R.id.Admin).isVisible = true
+                        menu.findItem( R.id.UsuarioNav).isVisible = true
+                    }
+                    "Usuario" -> {
+                        menu.findItem( R.id.Admin).isVisible = false
+                        menu.findItem( R.id.UsuarioNav).isVisible = false
+                    }
+                    else -> {
+                        menu.findItem( R.id.Admin).isVisible = false
+                        menu.findItem(R.id.UsuarioNav).isVisible = false
+                    }
+                }
+            }
+        }
+    }
+
 
 
     private fun CargarFragment(fragment: Fragment) {

@@ -32,6 +32,7 @@ import androidx.biometric.BiometricManager
 import androidx.biometric.BiometricPrompt
 import androidx.core.content.ContextCompat
 import com.example.taller2.data.CredencialesManager
+import com.example.taller2.data.UsuarioRepository
 
 class PantallaLogin : AppCompatActivity() {
 
@@ -292,8 +293,30 @@ class PantallaLogin : AppCompatActivity() {
                     idToken = googleIdTokenCredential.idToken
                     provider = Google
 
-
                 }
+
+                // Verificar si el primer login
+                val user = SupabaseClient.client.auth.currentUserOrNull()
+
+                if (user != null) {
+                    val existe = UsuarioRepository.existeUsuario(userId = user.id)
+
+                    if (!existe) {
+                        val nombreCompleto = user.userMetadata
+                            ?.get("full_name")?.toString()
+                            ?.replace(oldValue = "\"", newValue = "") ?: " "
+
+                        val partes = nombreCompleto.split(" ")
+                        val nombres = partes.firstOrNull() ?: ""
+                        val apellidos = partes.drop(1).joinToString(separator = " ")
+                        val correoGoogle = user.email?:""
+                        UsuarioRepository.insertarUsuario(user.id, nombres, apellidos,correoGoogle)
+                    }
+                }
+
+
+
+
                 runOnUiThread {
                     Toast.makeText(
                         this@PantallaLogin,

@@ -15,6 +15,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import com.example.taller2.R
 import com.example.taller2.SupabaseClient
+import com.example.taller2.data.UsuarioRepository
 
 
 import io.github.jan.supabase.auth.auth
@@ -22,6 +23,9 @@ import io.github.jan.supabase.auth.providers.builtin.Email
 import io.github.jan.supabase.postgrest.postgrest
 import kotlinx.coroutines.launch
 import kotlinx.serialization.Serializable
+import kotlinx.serialization.json.buildJsonObject
+import org.slf4j.MDC.put
+
 import kotlin.jvm.java
 
 class  registro : AppCompatActivity() {
@@ -130,12 +134,16 @@ data class UsuarioData(
                     SupabaseClient.client.auth.signUpWith(Email){
                         email = correo
                         password = contrasena
+                        data= buildJsonObject {
+                            put("nombres", nombres)
+                            put("apellidos", apellidos)
+
+
+                        }
                     }
 
                     val userId = SupabaseClient.client.auth.currentUserOrNull()?.id ?: ""
-                    SupabaseClient.client.postgrest["Usuarios"].insert(
-                       UsuarioData (id = userId, nombres = nombres, apellidos = apellidos)
-                    )
+                    UsuarioRepository.insertarUsuario(userId, nombres, apellidos, correo)
 
                     runOnUiThread {
                         Toast.makeText(this@registro, "Registro exitoso", Toast.LENGTH_SHORT).show()
