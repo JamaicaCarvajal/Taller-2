@@ -54,6 +54,26 @@
                 app:layout_constraintHorizontal_bias="0.534"
                 app:layout_constraintVertical_bias="0.11" />
 
+            <!-- Foto de perfil redonda -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="24dp"
+                app:cardCornerRadius="60dp"
+                app:cardElevation="6dp"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_foto_perfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_logo_round"
+                    android:contentDescription="@string/foto_de_perfil" />
+
+            </androidx.cardview.widget.CardView>
+
+
             <TextView
                 android:id="@+id/NombreEditarPerfil"
                 android:layout_width="wrap_content"
@@ -149,16 +169,16 @@
                 android:layout_marginTop="30dp"
                 android:textSize="27sp" />
 
+
             <EditText
                 android:id="@+id/InputContrasenaRepetirEditPerfl"
                 android:layout_width="360dp"
                 android:layout_height="53dp"
+                android:autofillHints="Password"
                 android:background="@drawable/style_edit_text"
                 android:inputType="textPassword"
-                android:autofillHints="Password"
                 android:paddingStart="15dp"
-                android:paddingEnd="15dp"/>
-
+                android:paddingEnd="15dp" />
 
             <Button
                 android:id="@+id/botonEditPerfl"

@@ -5,7 +5,7 @@ import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.Menu
 import android.widget.Toast
-
+import com.example.taller2.main.perfil.EditarPerfilFragment
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
@@ -20,7 +20,8 @@ import com.example.taller2.activities.PantallaLogin
 import com.example.taller2.data.UsuarioRepository
 import com.example.taller2.main.admin.AdminFragment
 import com.example.taller2.main.admin.usuariosFragment
-import com.example.taller2.main.perfil.EditPerilFragment
+import com.example.taller2.main.perfil.PerfilFragment
+
 import com.example.taller2.main.productos.CarritoFragment
 import com.example.taller2.main.productos.CatalogoFragment
 import com.example.taller2.main.productos.HomeFragment
@@ -69,7 +70,7 @@ class MainActivity : AppCompatActivity() {
             when (item.itemId) {
                 R.id.navHome -> CargarFragment(HomeFragment())
                 R.id.navCatalogo -> CargarFragment(CatalogoFragment())
-                R.id.navCall -> CargarFragment(CarritoFragment())
+                R.id.navCall -> CargarFragment(PerfilFragment())
                 R.id.navAyuda -> CargarFragment(facoritosFragment())
 
             }
@@ -79,9 +80,9 @@ class MainActivity : AppCompatActivity() {
         navView.setNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.navHome -> CargarFragment(HomeFragment())
-                R.id.Admin -> CargarFragment(AdminFragment())
+                R.id.Admin -> CargarFragment(PerfilFragment())
                 R.id.UsuarioNav -> CargarFragment(usuariosFragment())
-                R.id.EditPerfilNav -> CargarFragment(EditPerilFragment())
+                R.id.EditPerfilNav -> CargarFragment(EditarPerfilFragment())
                 R.id.Nav_logOut -> cerrarSesion()
 
             }
